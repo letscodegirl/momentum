@@ -1,22 +1,22 @@
 const calculator = {
   add: function (a, b) {
-    console.log(a + b);
+    alert(a + b);
   },
 
   sub: function (a, b) {
-    console.log(a - b);
+    alert(a - b);
   },
 
   div: function (a, b) {
-    console.log(a / b);
+    alert(a / b);
   },
 
   multi: function (a, b) {
-    console.log(a * b);
+    alert(a * b);
   },
 
   power: function (a, b) {
-    console.log(a ** b);
+    alert(a ** b);
   }
 
 };
