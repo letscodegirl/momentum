@@ -1,28 +1,9 @@
-const calculator = {
-  add: function (a, b) {
-    alert(a + b);
-  },
+const age = 96;
+function calculateKrAge(ageofForeigner) {
+  ageofForeigner + 2;
+  return "hello";
+}
 
-  sub: function (a, b) {
-    alert(a - b);
-  },
+const krAge = calculateKrAge(age); // returning this line with the result of line 3
 
-  div: function (a, b) {
-    alert(a / b);
-  },
-
-  multi: function (a, b) {
-    alert(a * b);
-  },
-
-  power: function (a, b) {
-    alert(a ** b);
-  }
-
-};
-
-calculator.add(5, 1);
-calculator.sub(5, 1);
-calculator.div(5, 1);
-calculator.multi(5, 1);
-calculator.power(5, 1);
+console.log(krAge);
