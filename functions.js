@@ -1,6 +1,6 @@
 const calculator = {
   add: function (a, b) {
-    return a + b;
+    return a + b; //function finishes its job
   },
 
   sub: function (a, b) {
@@ -28,3 +28,6 @@ const multiResult = calculator.multi(divResult, addResult);
 const powerResult = calculator.power(divResult, subResult);
 
 console.log(addResult);
+
+//most of the time we dont want to console log
+//function 외부에서 value 제공받기(망고주스)
