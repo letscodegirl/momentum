@@ -1,33 +1,23 @@
-const calculator = {
-  add: function (a, b) {
-    return a + b; //function finishes its job
-  },
+const age = parseInt( prompt("how old are you?") ); //assigning a value
 
-  sub: function (a, b) {
-    return a - b;
-  },
+if ( isNaN(age) || age < 0 ) {
+  console.log("please write a real positive number");
+} else if (age < 18) {
+  console.log("you are too young");
+} else if (age >= 18 && age <= 50) {  // && and operator || or operator
+  console.log("you can drink");
+} else if (age > 50 && age <= 80) {
+  console.log("you should exercise");
+} else if (age === 100) { // check for equality !== not
+  console.log("wow you are wise");
+} else if (age > 80) {
+  console.log("you can do whatever you want");
+}
 
-  div: function (a, b) {
-    return a / b;
-  },
+//else if로 끝나도 상관없음 else로 꼭 끝나야 하는 것은 아님
 
-  multi: function (a, b) {
-    return a * b;
-  },
+if ((a && b) || (c && d) || (x || w)) {
+//will be executed
+}
 
-  power: function (a, b) {
-    return a ** b;
-  }
-
-};
-
-const addResult = calculator.add(4, 3);
-const subResult = calculator.sub(addResult, 10);
-const divResult = calculator.div(10, subResult);
-const multiResult = calculator.multi(divResult, addResult);
-const powerResult = calculator.power(divResult, subResult);
-
-console.log(addResult);
-
-//most of the time we dont want to console log
-//function 외부에서 value 제공받기(망고주스)
+//clicks, events, interacting with users (listen)
